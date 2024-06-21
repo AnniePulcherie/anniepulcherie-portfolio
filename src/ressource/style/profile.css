@@ -1,0 +1,116 @@
+.profile-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    animation: bgAnimation 10s linear infinite;
+  }
+  
+  @keyframes bgAnimation {
+    0% {
+      background-color: #000;
+    }
+    50% {
+      background-color: #fff;
+    }
+    100% {
+      background-color: #000;
+    }
+  }
+  
+  .profile-details {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .typing-text {
+    color: #0b0a0aeb;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15em;
+    animation: typing 5s steps(40) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15em;
+    }
+  }
+  
+  .typing-text span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .typing-text span:nth-child(odd) {
+    animation: blinkCursor 0.7s infinite;
+  }
+  
+  @keyframes blinkCursor {
+    from,
+    to {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: #fff;
+    }
+  }
+
+  .span-texte{
+    margin: 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+  .image-profil{
+    max-width: 300px;
+    border-radius: 50%;
+  }
+
+  .class-btn{
+    margin-top: 20px;
+  }
+
+  .profil-space{
+    display: flex;
+    flex-direction:row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  @media screen and (max-width:700px){
+    .profil-space{
+      display: block;
+      flex-direction: column !important;
+    }
+    
+  }
+
+  @media screen and (max-width:400px){
+
+    .image-profil{
+      width: 100%;
+      margin: 10px;
+    }
+    .home-content .class-btn{
+      font-size:10px;
+    }
+    
+  }
+

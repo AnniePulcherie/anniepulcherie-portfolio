@@ -1,0 +1,12 @@
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.service .card{
+    width: 300px;
+    height: 300px;
+}
