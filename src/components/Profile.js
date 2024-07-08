@@ -3,10 +3,8 @@ import "../ressource/style/profile.css";
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
 import profil from '../image/profil.JPG';
-
 import Experience from './Experience';
 import 'boxicons/css/boxicons.min.css';
-import { Container } from 'react-bootstrap';
 import AnniePulcherie from '../ressource/AnniePulcherie.pdf';
 const Profile = () => {
   const el = useRef(null);

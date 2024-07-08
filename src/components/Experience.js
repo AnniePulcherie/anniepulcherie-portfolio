@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import '../ressource/style/experiences.css';
-import profil from '../image/profil.JPG';
 import accueil from '../image/accueil.PNG';
 import sectDirect from '../image/sectDirect.PNG';
 import picking from '../image/picking.PNG';
