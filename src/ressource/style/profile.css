@@ -105,8 +105,9 @@
   @media screen and (max-width:400px){
 
     .image-profil{
-      width: 100%;
+      width: 80%;
       margin: 10px;
+      min-width: 150px;
     }
     .home-content .class-btn{
       font-size:10px;
